@@ -7,11 +7,11 @@ export default function CounterDecorator(Story, context) {
     count: 0,
   });
 
-  const [state, setState] = useState({ ...initialState });
+  const [ctxCount, setCtxCount] = useState({ ...initialState });
 
   return (
     <div>
-      <CtxCountProvider.Provider value={(state, setState)}>
+      <CtxCountProvider.Provider value={(ctxCount, setCtxCount)}>
         <Story />
       </CtxCountProvider.Provider>
     </div>
