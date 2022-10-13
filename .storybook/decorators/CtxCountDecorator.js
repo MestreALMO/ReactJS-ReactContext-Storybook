@@ -1,4 +1,4 @@
-import CountProvider from "../../src/context/ctxCount";
+import CtxCountProvider from "../../src/context/ctxCount";
 import { useParameter } from "@storybook/addons";
 import { useState } from "react";
 
@@ -11,9 +11,9 @@ export default function CounterDecorator(Story, context) {
 
   return (
     <div>
-      <CountProvider.Provider value={(state, setState)}>
+      <CtxCountProvider.Provider value={(state, setState)}>
         <Story />
-      </CountProvider.Provider>
+      </CtxCountProvider.Provider>
     </div>
   );
 }
