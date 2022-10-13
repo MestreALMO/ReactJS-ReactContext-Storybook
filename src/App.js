@@ -1,11 +1,14 @@
 import { Count } from "./components/count";
+import CtxCountProvider from "./context/ctxCount";
 
 function App() {
   return (
     <>
-      <h1>DevALMO, YouTube Channel</h1>
+      <CtxCountProvider>
+        <h1>DevALMO, YouTube Channel</h1>
 
-      <Count />
+        <Count />
+      </CtxCountProvider>
     </>
   );
 }

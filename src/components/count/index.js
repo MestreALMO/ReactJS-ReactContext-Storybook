@@ -1,14 +1,15 @@
-import { useCount } from "../../context/Count";
+import { useCtxCount } from "../../context/ctxCount";
 
 export const Count = () => {
-  const { count, setCount } = useCount();
+  const { ctxCount, setCtxCount } = useCtxCount();
 
   return (
     <>
-      <h2>{count}</h2>
+      <h2>{ctxCount}</h2>
+
       <button
         onClick={() => {
-          setCount(count + 1);
+          setCtxCount(ctxCount + 1);
         }}
       >
         +1
@@ -16,7 +17,7 @@ export const Count = () => {
 
       <button
         onClick={() => {
-          setCount(count - 1);
+          setCtxCount(ctxCount - 1);
         }}
       >
         -1
