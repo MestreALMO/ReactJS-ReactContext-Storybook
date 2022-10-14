@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <CtxCountProvider>
-        <h1>DevALMO, YouTube Channel</h1>
+        <h1>André</h1>
 
         <Count />
       </CtxCountProvider>
